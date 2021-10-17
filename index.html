@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>CalculadoraApp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="container__main">
+      <section class="calculator">
+        <div class="display">
+          <div class="value__top" id="valueTop"></div>
+          <div class="value__bottom" id="valueBottom"></div>
+        </div>
+
+        <button class="col-2 topC" onclick="display.deleteAll();">C</button>
+        <button class="flecha" onclick="display.deleteInOne();">←</button>
+        <button class="operator" value="dividir">÷</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator" value="multiplicar">X</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator" value="restar">−</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operator" value="sumar">+</button>
+        <button class="number col-2">0</button>
+        <button class="number">.</button>
+        <button class="operator" value="igual">=</button>
+      </section>
+      <h4 class="credits">By: @Francoherediadev</h4>
+    </section>
+
+    <script src="display.js"></script>
+    <script src="Calculetor.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

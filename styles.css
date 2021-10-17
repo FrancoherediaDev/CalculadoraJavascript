@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradient(
+      to right top,
+      #00000065,
+      #fff8f835,
+      #fff8f821
+    ),
+    url(assets/99815.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
+
+.container__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  grid-template-rows: 160px repeat(5, 75px);
+  background-color: #2a2d37;
+  padding: 1.5rem;
+  border-radius: 3.2rem;
+  box-shadow: 15px 10px 0px 5px #00000040;
+}
+
+button {
+  cursor: pointer;
+  color: #ffff;
+  font-size: 1.9rem;
+  margin: 0.6rem;
+  padding: 0;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: #1112153c;
+  font-weight: 500;
+}
+
+button:active {
+  background-color: #0808093c;
+}
+
+button:focus {
+  outline: none;
+}
+
+.display {
+  grid-column: 1/-1;
+  color: #ffff;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 5px 5px 10px;
+  text-align: right;
+  justify-content: space-between;
+  word-break: break-all;
+  font-weight: 600;
+  background-color: #1112153c;
+  border-radius: 2rem;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.value__top {
+  font-size: 3.2rem;
+}
+
+.value__bottom {
+  font-size: 2rem;
+}
+
+.operator {
+  color: #ae6368;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.topC {
+  color: #39e9cb;
+}
+
+.flecha {
+  font-weight: 700;
+  color: #39e9cb;
+}
+
+.credits {
+  align-self: end;
+  text-align: center;
+  font-size: 1.2rem;
+}
